@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.sjsu.cmpe295.parket.AdvancedSearch"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:id="@+id/toolbar_with_only_back_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/advancedSearchAddress"
+        android:hint="Address"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/advancedSearchDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_primary_light"
+            android:text="@string/advancedSearchDateButtonText"
+            android:textAppearance="@style/ToolbarSmallTextStyle"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/advancedSearchStartTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_primary_light"
+            android:text="@string/advancedSearchStartTimeButtonText"
+            android:textAppearance="@style/ToolbarSmallTextStyle"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/advancedSearchEndTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_primary_light"
+            android:text="@string/advancedSearchEndTimeButtonText"
+            android:textAppearance="@style/ToolbarSmallTextStyle"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:id="@+id/advancedSearchRange"
+        android:hint="Search range (radius in miles)"
+        android:inputType="numberDecimal"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/advancedSearchSearchButton"
+        android:text="Search"
+        android:textSize="14dp"
+        android:clickable="true"
+        android:background="@drawable/button_bg_accent"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

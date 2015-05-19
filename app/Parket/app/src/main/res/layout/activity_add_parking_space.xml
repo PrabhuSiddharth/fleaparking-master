@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/linearLayoutAddParkingSpace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="edu.sjsu.cmpe295.parket.AddParkingSpace">
+
+            <Toolbar
+                android:id="@+id/toolbar_addParkingSpace"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@color/primary" />
+
+
+            <EditText
+                android:id="@+id/parkingSpaceLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="Parking Space Label"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parkingSpaceLabel"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:editable="true"
+                android:hint="Description"
+                android:lines="3"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/address1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/description"
+                android:layout_alignRight="@+id/description"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:editable="true"
+                android:hint="Address 1"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/address2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:hint="Address 2"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:editable="true"
+                android:hint="City"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/state"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/state"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="USA"
+                android:textColor="@color/light_grey"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/addPhotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_bg_primary_light"
+                android:clickable="true"
+                android:padding="5dp"
+                android:text="Add Photo"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/verifyAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg_accent"
+                android:clickable="true"
+                android:text="Verify Address"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginTop="25dp" />
+        </LinearLayout>
+
+
+</ScrollView>
